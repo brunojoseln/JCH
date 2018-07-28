@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>IDuck</title>
+
+        <script>
+        function clique() {
+
+            //A variável nome recebe o que o usuário inserir no prompt
+            var nome = prompt("Qual é o seu nome?","Digite seu nome.");
+
+            if (nome){
+                //Dá as boas vindas ao usuário
+                alert("Bom dia "+nome+".");
+                //Troca a imagem
+                document.getElementById("pato") .src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Pictograms-nps-misc-waterfowl-2.svg";
+            }
+        }
+        </script>
+
+    </head>
+
+    <!--Depois que a pagina carregar o evento onload ocorra-->
+    <body onload="alert('Quack');">
+        <div style="margin-top: 100px; text-align: center">
+            <!--Quando o usuário clicar o evento clique será acionado-->
+            <img id="pato"  src="https://upload.wikimedia.org/wikipedia/commons/9/97/Pictograms-nps-misc-waterfowl.svg" alt="pato" style="cursor: pointer" onclick="clique()"></img>
+        </div>
+    </body>
+</html>
